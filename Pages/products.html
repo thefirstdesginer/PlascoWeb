@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plasco | منتجاتنا</title>
+    <link rel="icon" type="image/png" href="../assets/icons/Logo-Plasco.png">
+
+    <!-- Bootstrap RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap" rel="stylesheet" />
+
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Glightbox CSS for image/video lightbox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- i18next for language translation -->
+    <script src="https://unpkg.com/i18next@21.6.16/dist/umd/i18next.min.js"></script>
+
+    <!-- Swiper CSS for sliders -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+
+
+<body>
+    <!-- ======= Loading Screen ======= -->
+    <div id="loading-screen">
+        <div class="loader">
+            <img src="../assets/images/Logo-Plasco-Loading.png" alt="Loading Logo" />
+            <span>Loading...</span>
+        </div>
+    </div>
+
+    <!-- ======= Header ======= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm" data-aos="fade-down">
+        <div class="container">
+            <!-- Company Name with Logo -->
+            <a class="navbar-brand fw-bold text-white d-flex align-items-center gap-2" href="../index.html">
+                <img src="../assets/images/Logo-Plasco.png" alt="Plasco Logo" width="35" height="40">
+                Plasco Pack
+            </a>
+            <!-- Toggle Button (Mobile) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapse Content -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <!-- Nav links -->
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-i18n="nav.home" href="../index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html" data-i18n="nav.about">من نحن</a>
+                    </li>
+
+                    <!-- Language button inside menu (mobile only) -->
+                    <li class="nav-item d-lg-none mt-3">
+                        <button id="langToggleMobile" class="btn btn-outline-secondary btn-sm w-100 rounded-pill"
+                            style="margin: 11px -2px !important;">
+                            English
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Contact Button (Mobile Only) -->
+                <li class="nav-item d-lg-none mt-2">
+                    <a href="../index.html#contact" data-i18n="nav.contact"
+                        class="btn btn-outline-light w-100 rounded-pill">تواصل
+                        معنا</a>
+                </li>
+
+
+                <div class="d-none d-lg-block">
+                    <a href="../index.html#contact" data-i18n="nav.contact"
+                        class="btn btn-outline-light rounded-pill px-4">
+                        تواصل معنا
+                    </a>
+                </div>
+            </div>
+
+            <!-- Language button (desktop only) -->
+            <div class="lang-switcher ms-3 d-none d-lg-block">
+                <button id="langToggleDesktop" class="btn btn-sm btn-outline-secondary rounded-pill">English</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======= Hero Section (Products Page) ======= -->
+    <section id="hero" class="hero-section hero-products-bg" required data-aos="zoom-out">
+        <!-- طبقة غامقة فوق الصورة -->
+        <div class="overlay"></div>
+
+        <!-- النص فوق الصورة -->
+        <div class="container text-center z-1" data-aos="fade-up">
+            <h1 class="display-3 fw-bold"><a class="nav-link-about" href="#products" style="font-weight: bold;"
+                    data-i18n="productspage.title">منتجاتنا</a>
+            </h1>
+            <p class="lead" data-i18n="productspage.subtitle">
+                منتجات بلاستيكية مبتكرة بجودة عالمية وخبرة تزيد عن 20 عامًا تلبي جميع احتياجاتك بأحدث التقنيات.
+            </p>
+        </div>
+    </section>
+
+    <!-- ======= Products Grid Section ======= -->
+    <section class="products-section" id="products">
+        <div class="products-grid">
+            <div class="product-card" data-aos="fade-up" data-aos-delay="0">
+                <img src="../assets/images/Products/p1.jpg" alt="Product 1" />
+                <h3 data-i18n="products.products.0.name">أكياس التسوق</h3>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="../assets/images/Products/p2.jpg" alt="Product 2" />
+                <h3 data-i18n="products.products.1.name">أكياس الشحن والتغليف</h3>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="../assets/images/Products/p3.jpg" alt="Product 3" />
+                <h3 data-i18n="products.products.2.name">أشرطة التحذير</h3>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="../assets/images/Products/p4.jpg" alt="Product 4" />
+                <h3 data-i18n="products.products.3.name">حفظ الطعام</h3>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+                <img src="../assets/images/Products/p5.jpg" alt="Product 5" />
+                <h3 data-i18n="products.products.4.name">رولات التغليف</h3>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="500">
+                <img src="../assets/images/Products/p6.jpg" alt="Product 6" />
+                <h3 data-i18n="products.products.5.name">أكياس قوية التحمل</h3>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="600">
+                <img src="../assets/images/Products/p7.jpg" alt="Product 7" />
+                <h3 data-i18n="products.products.6.name">أكياس للعلامات التجارية</h3>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="700">
+                <img src="../assets/images/Products/p8.jpg" alt="Product 8" />
+                <h3 data-i18n="products.products.7.name">أكياس الدجاج</h3>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="800">
+                <img src="../assets/images/Products/p9.jpg" alt="Product 9" />
+                <h3 data-i18n="products.products.8.name">رولات OPP</h3>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="900">
+                <img src="../assets/images/Products/p10.jpeg" alt="Product 10" />
+                <h3 data-i18n="products.products.9.name">الشرينك</h3>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="900">
+                <img src="../assets/images/Products/p11.jpg" alt="Product 11" />
+                <h3 data-i18n="products.products.10.name">أكياس OPP</h3>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="900">
+                <img src="../assets/images/Products/p12.jpg" alt="Product 12" />
+                <h3 data-i18n="products.products.11.name">أكياس المخابز</h3>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="900">
+                <img src="../assets/images/Products/p13.jpg" alt="Product 13" />
+                <h3 data-i18n="products.products.12.name">أكياس البيض</h3>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="900">
+                <img src="../assets/images/Products/p14.jpg" alt="Product 14" />
+                <h3 data-i18n="products.products.13.name">سفر الطعام</h3>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="900">
+                <img src="../assets/images/Products/p15.jpg" alt="Product 15" />
+                <h3 data-i18n="products.products.14.name">أكياس النفايات</h3>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="900">
+                <img src="../assets/images/Products/p16.jpg" alt="Product 16" />
+                <h3 data-i18n="products.products.15.name">أكياس المغاسل التجارية والفنادق</h3>
+            </div>
+            <!-- كرر الكروت حسب الحاجة -->
+        </div>
+    </section>
+
+
+    <!-- ======= Products Slider Section ======= -->
+    <section id="products" class="products-section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="fw-bold text-primary mb-3">منتجاتنا</h2>
+
+            <!-- Swiper Slider -->
+            <div class="swiper products-slider">
+                <div class="swiper-wrapper">
+                    <!-- Product Item -->
+                    <div class="swiper-slide product-card">
+                        <img src="../assets/images/Products/p1.jpg" alt="أكياس التسوق">
+                        <p data-i18n="products.products.0.name">أكياس التسوق</p>
+                    </div>
+                    <div class="swiper-slide product-card">
+                        <img src="../assets/images/Products/p2.jpg" alt="أكياس الشحن والتغليف">
+                        <p data-i18n="products.products.1.name">أكياس الشحن والتغليف</p>
+                    </div>
+                    <div class="swiper-slide product-card">
+                        <img src="../assets/images/Products/p3.jpg" alt="أشرطة التحذير">
+                        <p data-i18n="products.products.2.name">أشرطة التحذير</p>
+                    </div>
+                    <div class="swiper-slide product-card">
+                        <img src="../assets/images/Products/p4.jpg" alt="حفظ الطعام">
+                        <p data-i18n="products.products.3.name">حفظ الطعام</p>
+                    </div>
+                    <div class="swiper-slide product-card">
+                        <img src="../assets/images/Products/p5.jpg" alt="رولات التغليف">
+                        <p data-i18n="products.products.4.name">رولات التغليف</p>
+                    </div>
+                    <div class="swiper-slide product-card">
+                        <img src="../assets/images/Products/p6.jpg" alt="أكياس قوية التحمل">
+                        <p data-i18n="products.products.5.name">أكياس قوية التحمل</p>
+                    </div>
+                    <div class="swiper-slide product-card">
+                        <img src="../assets/images/Products/p7.jpg" alt="أكياس للعلامات التجارية">
+                        <p data-i18n="products.products.6.name">أكياس للعلامات التجارية</p>
+                    </div>
+                    <div class="swiper-slide product-card">
+                        <img src="../assets/images/Products/p8.jpg" alt="أكياس الدجاج">
+                        <p data-i18n="products.products.7.name">أكياس الدجاج</p>
+                    </div>
+                    <div class="swiper-slide product-card">
+                        <img src="../assets/images/Products/p9.jpg" alt="رولات OPP">
+                        <p data-i18n="products.products.8.name">رولات OPP</p>
+                    </div>
+                    <div class="swiper-slide product-card">
+                        <img src="../assets/images/Products/p10.jpeg" alt="الشرينك">
+                        <p data-i18n="products.products.9.name">الشرينك</p>
+                    </div>
+                    <div class="swiper-slide product-card">
+                        <img src="../assets/images/Products/p11.jpg" alt="رولات التغليف">
+                        <p data-i18n="products.products.10.name">أكياس OPP</p>
+                    </div>
+                    <div class="swiper-slide product-card">
+                        <img src="../assets/images/Products/p12.jpg" alt="أكياس المخابز">
+                        <p data-i18n="products.products.11.name">أكياس المخابز</p>
+                    </div>
+                    <div class="swiper-slide product-card">
+                        <img src="../assets/images/Products/p13.jpg" alt="أكياس البيض">
+                        <p data-i18n="products.products.12.name">أكياس البيض</p>
+                    </div>
+                    <div class="swiper-slide product-card">
+                        <img src="../assets/images/Products/p14.jpg" alt="سفر الطعام">
+                        <p data-i18n="products.products.13.name">سفر الطعام</p>
+                    </div>
+                    <div class="swiper-slide product-card">
+                        <img src="../assets/images/Products/p15.jpg" alt="اكياس النفايات">
+                        <p data-i18n="products.products.14.name">اكياس النفايات</p>
+                    </div>
+                    <div class="swiper-slide product-card">
+                        <img src="../assets/images/Products/p16.jpg" alt="أكياس المغاسل التجارية والفنادق">
+                        <p data-i18n="products.products.15.name">أكياس المغاسل التجارية والفنادق</p>
+
+                    </div>
+                </div>
+
+                <!-- Swiper Navigation Buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Footer ======= -->
+    <footer class="bg-dark text-white pt-5">
+        <div class="container">
+            <div class="row">
+                <!-- بيانات الشركة -->
+                <div class="col-md-6 text-end mb-4">
+                    <h5 class="fw-bold">Plasco Pack</h5>
+                    <p data-i18n="contact.address">📍المنطقة الصناعية، حفر الباطن - المملكة العربية السعودية</p>
+                    <p data-i18n="contact.email">📧 sales@plascoksa.com</p>
+                    <p data-i18n="contact.phone">📞 4377 806 59 966+</p>
+                </div>
+
+                <!-- خريطة الموقع -->
+                <div class="col-md-6 mb-4">
+                    <div style="width: 100%; height: 250px; margin-top: 20px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.2055975281555!2d46.064298199999996!3d28.4130525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fd7370e2d28f5ef%3A0x6c2e73ffa1edbd0e!2zUGxhc2NvIFBhY2sgSW5kdXN0cmlhbCDYqNmE2KfYs9mD2Ygg2KjYp9mDINin2YTYtdmG2KfYudmK2Kk!5e0!3m2!1sar!2seg!4v1747562587525!5m2!1sar!2seg"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center py-3 mt-4 border-top border-secondary">
+                <small data-i18n="footer.rights">© 2025 جميع الحقوق محفوظة لـ Plasco Pack</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======= Buttoun Top  ======= -->
+    <button id="backToTop" class="btn btn-primary rounded-circle shadow" title="العودة للأعلى">
+        ↑
+    </button>
+
+
+    <!-- AOS (Animate On Scroll) -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+    <!-- Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Glightbox -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- Swiper for sliders -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+    <script src="../js/translation.js"></script>
+
+    <!-- Hide loading screen when the page is fully loaded -->
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.getElementById("loading-screen");
+            loader.classList.add("hidden");
+        });
+    </script>
+
+</body>
+
+</html>
