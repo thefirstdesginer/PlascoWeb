@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plasco | نبذه عن الشركة</title>
+    <link rel="icon" type="image/png" href="../assets/icons/Logo-Plasco.png">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap" rel="stylesheet" />
+
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Glightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <!-- Animate.css Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- i18next Library for Translations -->
+    <script src="https://unpkg.com/i18next@21.9.1/i18next.min.js"></script>
+
+    <!-- AOS Animation JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+
+
+
+<body>
+
+    <!-- ======= Loading Screen ======= -->
+    <div id="loading-screen">
+        <div class="loader">
+            <img src="../assets/images/Logo-Plasco-Loading.png" alt="Loading Logo" />
+            <span>Loading...</span>
+        </div>
+    </div>
+
+    <!-- ======= Header ======= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm" required data-aos="fade-down">
+        <div class="container">
+            <!-- Company Logo and Name -->
+            <a class="navbar-brand fw-bold text-white d-flex align-items-center gap-2" href="../index.html">
+                <img src="../assets/images/Logo-Plasco.png" alt="Plasco Logo" width="35" height="40">
+                Plasco Pack
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Menu -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <!-- Navigation Links -->
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-i18n="nav.home" href="../index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-i18n="nav.products" href="products.html">المنتجات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-i18n="nav.Customer" href="../index.html#Customer">تقييم عملاؤنا</a>
+                    </li>
+
+                    <!-- Language Switcher (Mobile Only) -->
+                    <li class="nav-item d-lg-none mt-3">
+                        <button id="langToggleMobile" class="btn btn-outline-secondary btn-sm w-100 rounded-pill"
+                            style="margin: 11px -2px !important;">
+                            English
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Contact Button (Mobile Only) -->
+                <li class="nav-item d-lg-none mt-2">
+                    <a href="../index.html#contact" data-i18n="nav.contact"
+                        class="btn btn-outline-light w-100 rounded-pill">تواصل معنا</a>
+                </li>
+
+                <!-- Contact Button (Desktop Only) -->
+                <div class="d-none d-lg-block">
+                    <a href="../index.html#contact" data-i18n="nav.contact"
+                        class="btn btn-outline-light rounded-pill px-4">
+                        تواصل معنا
+                    </a>
+                </div>
+            </div>
+
+            <!-- Language Switcher (Desktop Only) -->
+            <div class="lang-switcher ms-3 d-none d-lg-block">
+                <button id="langToggleDesktop" class="btn btn-sm btn-outline-secondary rounded-pill">
+                    English
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======= Hero Section (About Page) ======= -->
+    <section id="hero" class="hero-section hero-about-bg" required data-aos="zoom-out">
+        <div class="overlay"></div>
+        <div class="container text-center z-1" data-aos="fade-up">
+            <h1 class="display-3 fw-bold">
+                <a class="nav-link-about shadowhero" href="#about" style="font-weight: bold;" data-i18n="about.title">من
+                    نحن</a>
+            </h1>
+
+            <p class="lead">
+                <a href="" class="highlight-link shadowhero" data-i18n="heroabout.title">تعرف علي شركة Plasco Pack</a>
+                <a class="nav-link-about shadowhero" href="#mission" data-i18n="heroabout.links.0">ورسالتنا</a>
+                <a class="nav-link-about shadowhero" href="#goals" data-i18n="heroabout.links.1">واهدافنا</a>
+                <a class="nav-link-about shadowhero" href="#vision" data-i18n="heroabout.links.2">ورؤيتنا</a>
+                <a class="nav-link-about shadowhero" href="#services" data-i18n="heroabout.links.3">وخدماتنا</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container" data-aos="fade-right">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-end">
+                    <h2 class="fw-bold text-primary mb-3" data-i18n="about.title">من نحن</h2>
+                    <h5 data-i18n="about.h5"></h5>
+                    <p data-i18n="about.description">
+                        مصنع بخبرة تتجاوز 20 عامًا في صنـــاعة المنتجــات البلاستيكية باستخدام أحدث التقنيات.
+                        نلتزم بتقديم حلول تغليف عالية الجودة، تلبي جميع المتطلبات بكفــاءة واحترافيــة.
+                        نحــرص على تطبيق أعلى المعايير المحلية والعالمــية لضمــان منتجــات بلاستيكيــة موثوقـة ومتطابقة
+                        مع المواصفــات.
+                        نمــلك مصنعيــن داخل المملكــة العربية السعودية، بالإضافــة إلى مصنــع في جمهوريــة مصـر
+                        العربية،
+                        مما يتيح لنا تلبيــة احتيـاجات عملائنا بكفاءة في كلا البلدين.
+                        نواصل التوسع وتطويــر تقنيــات الإنتــاج لنقــدم أفضــل حلول التغلـيف التجــاري والصنــاعي.
+                        نتميــز بجودة الطباعة وابتكــار أفضل التصاميم، بمــا يلبي متطلبات السوق السعودي بكفاءة عالية.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="../assets/images/AboutUs.png" class="img-fluid rounded shadow" alt="من نحن">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Mission Section ======= -->
+    <section id="mission" class="py-5">
+        <div class="container" data-aos="fade-left">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="../assets/images/OurMission.jpeg" class="img-fluid rounded shadow" alt="رسالتنا">
+                </div>
+                <div class="col-lg-6 text-end">
+                    <h2 class="fw-bold text-primary mb-3" data-i18n="mission.title">رسالتنا</h2>
+                    <p data-i18n="mission.description">
+                        تقديم منتجات بلاستيكية عالية الجودة بأسعار تنافسية، مع الالتزام بأعلى معايير الجودة والتحسين
+                        المستمر، مع مراعاة الحفاظ على البيئة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Goals Section ======= -->
+    <section id="goals" class="py-5 bg-light">
+        <div class="container" data-aos="fade-right">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-end">
+                    <h2 class="fw-bold text-primary mb-3" data-i18n="goals.title" style="margin-left: 36px !important;">
+                        اهدافنا</h2>
+                    <ul class="list-unstyled fw-bold">
+                        <li data-i18n="goals.description">
+                            نطمح إلى الريادة في صناعة المواد البلاستيكية، مع رؤية ترتكز على التميـــز والجودة.
+                        </li>
+                        <br>
+                        <li class="text-primary">
+                            ________________________________________________________
+                        </li>
+                        <br>
+                        <li data-i18n="goals.points.0">
+                            1- نحو القمة : نعمـــــــــــل على أن نكــــــــــون في طليعة قطـــاع البلاستيك في السعودية
+                            والخليج.
+                        </li>
+                        <br>
+                        <li data-i18n="goals.points.1">
+                            2- جودة بلا حدود : نلتزم بتقديــــــم منتجات بمعايير عالية تلبي تطلعات السوق.
+                        </li>
+                        <br>
+                        <li data-i18n="goals.points.2">
+                            3- شراكة تدوم : نحرص على بناء عـلاقات قوية مع عملائنا عبر خدمة متميزة وتجربة فريدة.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="../assets/images/OurGoals.jpg" class="img-fluid rounded shadow" alt="أهدافنا">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Vision Section ======= -->
+    <section id="vision" class="py-5">
+        <div class="container" data-aos="fade-left">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="../assets/images/OurVision.jpg" class="img-fluid rounded shadow" alt="رؤيتنا">
+                </div>
+                <div class="col-lg-6 text-end">
+                    <h2 class="fw-bold text-primary mb-3" data-i18n="vision.title">رؤيتنا</h2>
+                    <p data-i18n="vision.description">
+                        نسعى للريادة في صناعة البلاستيك الآمن والمساهمة في تحقيق رؤية المملكة 2030 عبر حلول مبتكرة
+                        ومستدامة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="py-5">
+        <div class="container text-center" data-aos="fade-up">
+            <h2 class="fw-bold text-primary mb-5" data-i18n="services.title">خدماتنا</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="p-4 bg-white shadow rounded h-100">
+                        <h5 class="fw-bold mb-2" data-i18n="services.items.0">أكياس مخصصة</h5>
+                        <p data-i18n="services.description.0">تصميم وطباعة أكياس بلاستيكية للعلامات التجارية</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="p-4 bg-white shadow rounded h-100">
+                        <h5 class="fw-bold mb-2" data-i18n="services.items.1">رولات تغليف</h5>
+                        <p data-i18n="services.description.1">رولات بلاستيكية مرنة للتغليف الصناعي والتجاري</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="p-4 bg-white shadow rounded h-100">
+                        <h5 class="fw-bold mb-2" data-i18n="services.items.2">حلول مستدامة</h5>
+                        <p data-i18n="services.description.2">منتجات صديقة للبيئة متوافقة مع معايير الاستدامة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Footer Section ======= -->
+    <footer class="bg-dark text-white pt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Company Information -->
+                <div class="col-md-6 text-end mb-4">
+                    <h5 class="fw-bold">Plasco Pack</h5>
+                    <p data-i18n="contact.address">📍المنطقة الصناعية، حفر الباطن - المملكة العربية السعودية</p>
+                    <p data-i18n="contact.email">📧 sales@plascoksa.com</p>
+                    <p data-i18n="contact.phone">📞 4377 806 59 966+</p>
+
+                    <!-- Social Media Links -->
+                    <div class="mt-3 d-flex gap-3 justify-content-center justify-content-md-start social-icons">
+                        <a href="https://www.facebook.com/people/Plasco-pack-%D9%85%D8%B5%D9%86%D8%B9-%D8%A8%D9%84%D8%A7%D8%B3%D9%83%D9%88-%D8%A8%D8%A7%D9%83/61576954888385/"
+                            class="text-white" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/plascopack/" class="text-white" target="_blank"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="https://wa.me/966598064377" class="text-white" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp fa-lg"></i>
+                        </a>
+                        <a href="https://snapchat.com/t/NVEe7O7P" class="text-white" target="_blank"
+                            aria-label="Snapchat">
+                            <i class="fab fa-snapchat fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div class="col-md-6 mb-4">
+                    <div style="width: 100%; height: 250px; margin-top: 20px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.2055975281555!2d46.064298199999996!3d28.4130525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fd7370e2d28f5ef%3A0x6c2e73ffa1edbd0e!2zUGxhc2NvIFBhY2sgSW5kdXN0cmlhbCDYqNmE2KfYs9mD2Ygg2KjYp9mDINin2YTYtdmG2KfYudmK2Kk!5e0!3m2!1sar!2seg!4v1747562587525!5m2!1sar!2seg"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center py-3 mt-4 border-top border-secondary">
+                <small data-i18n="footer.rights">© 2025 جميع الحقوق محفوظة لـ Plasco Pack</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======= Back to Top Button ======= -->
+    <button id="backToTop" class="btn btn-primary rounded-circle shadow" title="Back to top">
+        ↑
+    </button>
+
+    <!-- ======= WhatsApp Contact Button ======= -->
+    <a href="https://wa.me/966598064377" target="_blank" id="whatsappBtn" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ======= AOS (Animate On Scroll) Library ======= -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+    <!-- ======= Bootstrap Bundle (with Popper) ======= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ======= Glightbox (Lightbox for Images & Videos) ======= -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- ======= Swiper (Slider Library) ======= -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- ======= WOW.js (Scroll Animations) ======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- ======= Custom JavaScript Files ======= -->
+    <script src="../js/script.js"></script>
+    <script src="../js/translation.js"></script>
+
+    <!-- ======= Hide Loader on Page Load ======= -->
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.getElementById("loading-screen");
+            loader.classList.add("hidden");
+        });
+    </script>
+
+</body>
+
+</html>
